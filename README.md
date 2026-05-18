@@ -12,9 +12,10 @@
 
 ## Overview
 
-This project tackles the challenge of image stitching by solving multiple interconnected computer vision problems, including descriptor space alignment, geometric transformation, continuous domain mapping, and multi-image fusion. 
+This project tackles the challenge of image stitching by solving multiple interconnected computer vision problems, including descriptor space alignment, geometric transformation, continuous domain mapping, and multi-image fusion.
 
 ### Core Capabilities
+
 - **SIFT Feature Detection:** Scale & rotation invariant keypoint extraction
 - **Robust Feature Matching:** Lowe's ratio test for discriminative correspondence
 - **Homography Estimation:** DLT + RANSAC for perspective transformation
@@ -43,6 +44,7 @@ CV Assignment_(M25CSE023)/
 ## Quick Start
 
 ### Requirements
+
 - Python 3.8+
 - `opencv-python` >= 4.0
 - `numpy` >= 1.19
@@ -61,9 +63,11 @@ pip install opencv-python numpy matplotlib
 # Execute the script
 python main.py
 ```
+
 *Alternatively, you can run the interactive Jupyter notebook `CV_assignment(M25CSE023).ipynb`.*
 
 ### Expected Output
+
 ```text
 Saving panorama.jpg...
 ✓ Output Saved: panorama.jpg
@@ -73,7 +77,8 @@ Saving panorama.jpg...
 
 ## Results & Validation
 
-The pipeline successfully aligns and stitches three overlapping images into a single cohesive panorama. 
+The pipeline successfully aligns and stitches three overlapping images into a single cohesive panorama.
+
 - **Imperceptible Seams:** Distance-weighted blending ensures smooth transitions.
 - **Color Consistency:** Exposure compensation corrects brightness variations across the images.
 - **Geometric Accuracy:** RANSAC reliably filters out mismatched features to produce an accurate homography matrix.
